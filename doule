@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int a, b, c, z;
+	printf("请输入a和b:");
+	scanf("%d%d", &a, &b);
+	int n(int x, int y);
+		c = n(a, b);
+	z = a * b / c;
+	printf("最大公约数为%d\n最小公倍数为%d\n", c, z);
+	return 0;
+
+}
+int n(int x,int y)
+{
+	int i, j,z;
+	j = (x > y) ? y : x;
+	for (i = 1; i <= j; i++)
+		if (x % i == 0 && y % i == 0)
+			z = i;
+	return z;
+}
