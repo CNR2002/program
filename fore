@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	char a[20], b, c;
+	printf("请输入密码：");
+	scanf("%s", a);
+	for (; (c = getchar()) != '\n';);
+	printf("请输入<Y/N>:");
+	b = getchar();
+	if (b == 'Y')
+		printf("输入正确！");
+	else
+		printf("输入错误！");
+	return 0;
+
+}
