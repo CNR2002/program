@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdio.h>
+#include<Windows.h>
+#include<stdlib.h>
+int main()
+{
+	int right, left=0;
+	char a[80];
+	char b[] = "                                                                                                                   ";
+	gets(a);
+	right = strlen(a) - 1;
+	while(right>=left)
+	{
+		b[left] = a[left];
+		b[right] = a[right];
+		printf("%s", b);
+		Sleep(1000);
+		system("cls");
+		left++, right--;
+	}
+	printf("%s", b);
+	return 0;
+}
