@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int a = 1, b;
+	switch (a)
+	{
+	case 1:b = 30;
+	case 2:b = 16;
+	case 3:b = 10;
+	default:b = 0;
+	}
+	printf("%d", b);
+	return 0;
+
+}
