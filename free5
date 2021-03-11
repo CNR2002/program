@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    char a;
+    a=getchar();
+    while(a!='\n')
+    {
+        if(a>='a'&&a<='z'||a>='A'&&a<='Z')
+        
+            if(a>='w'&&a<='z'||a>='W'&&a<='Z')
+            a=a-22;
+            else a=a+4;
+        
+        printf("%c",a);
+        a=getchar();
+    }
+    printf("\n");
+    return 0;
+}
